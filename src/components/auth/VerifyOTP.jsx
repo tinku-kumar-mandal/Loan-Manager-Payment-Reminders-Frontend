@@ -1,6 +1,6 @@
 import { useLocation, useNavigate } from "react-router-dom";
 import { useFormik } from "formik";
-import API from "../../api/axiosConfig";
+import API from "../api/axiosConfig";
 import { otpSchema } from "../../schemas/schemas";
 import { useEffect, useState } from "react";
 
