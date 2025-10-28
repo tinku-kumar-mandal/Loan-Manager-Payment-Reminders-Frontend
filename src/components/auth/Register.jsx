@@ -1,7 +1,7 @@
 import { useFormik } from "formik";
 import { registerSchema } from "../../schemas/schemas";
 import { useState } from "react";
-import API from "../../api/axiosConfig";
+import API from "../api/axiosConfig";
 import { useNavigate } from "react-router-dom";
 
 const Register = () => {
@@ -47,7 +47,7 @@ const Register = () => {
         <div className="p-8">
           <div className="text-center mb-8">
             <h1 className="text-3xl font-bold text-gray-800 mb-2">Create your account</h1>
-            <p className="text-gray-600">Sign up to enjoy the best managing experience</p>
+            {/* <p className="text-gray-600">Sign up to enjoy the best managing experience</p> */}
           </div>
           
           <div className="flex border-b border-gray-200 mb-6">

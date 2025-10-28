@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
-import API from "../../api/axiosConfig";
+import API from "../api/axiosConfig";
 import * as Yup from "yup";
 import { useFormik } from "formik";
 

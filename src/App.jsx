@@ -1,20 +1,19 @@
 import "./App.css";
 import { Route, Routes } from "react-router-dom";
-import Register from "./pages/auth/Register";
-import Login from "./pages/auth/Login";
-import ForgotPassword from "./pages/auth/ForgotPassword";
-import VerifyOTP from "./pages/auth/VerifyOTP";
+import Dashboard from "./components/dashboard/UserDashboard";
 import ProtectedRoute from "./pages/routes/ProtectedRoute";
-import VerifyResetOTP from "./pages/auth/VerifyResetOTP";
-import Dashboard from "./pages/home/Dashboard";
-import Homepage from "./pages/home/Homepage";
+import Register from "./components/auth/Register";
+import VerifyOTP from "./components/auth/VerifyOTP";
+import Login from "./components/auth/Login";
+import ForgotPassword from "./components/auth/ForgotPassword";
+import VerifyResetOTP from "./components/auth/VerifyResetOTP";
 
 function App() {
   return (
     <>
       <Routes>
         <Route
-          path="/dashboard"
+          path="/"
           element={
             <ProtectedRoute>
               <Dashboard />
@@ -22,7 +21,6 @@ function App() {
           }
         />
 
-        <Route path="/" element={<Homepage />} />
         <Route path="/register" element={<Register />} />
         <Route path="/verify-otp" element={<VerifyOTP />} />
         <Route path="/login" element={<Login />} />
